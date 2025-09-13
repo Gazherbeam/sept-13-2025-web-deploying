@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Cool Page with Everything</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+  body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(120deg, #667eea, #764ba2);
+    color: #eee;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+    min-height: 100vh;
+  }
+
+  .container {
+    background: rgba(0, 0, 0, 0.5);
+    max-width: 700px;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.6);
+  }
+
+  h1 {
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 25px;
+  }
+
+  p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+
+  /* Div with a background and padding */
+  .highlight-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px 20px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+  }
+
+  /* Span with custom color */
+  .highlight-span {
+    color: #ffcb6b;
+    font-weight: 600;
+  }
+
+  /* Unordered list */
+  ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 25px;
+  }
+
+  ul li {
+    position: relative;
+    padding-left: 28px;
+    margin-bottom: 12px;
+    font-size: 18px;
+    cursor: default;
+  }
+
+  ul li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    top: 2px;
+    color: #ff6f61;
+    font-weight: bold;
+    font-size: 22px;
+  }
+
+  /* Ordered list */
+  ol {
+    padding-left: 20px;
+    margin-bottom: 30px;
+    font-size: 18px;
+    color: #cbd5e1;
+  }
+
+  ol li {
+    margin-bottom: 10px;
+  }
+
+  /* Table styles */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+  }
+
+  table th,
+  table td {
+    padding: 12px 15px;
+    border: 1px solid #555;
+    text-align: left;
+  }
+
+  table th {
+    background: #6b46c1;
+    color: white;
+  }
+
+  table tbody tr:nth-child(even) {
+    background: rgba(255, 255, 255, 0.05);
+  }
+
+  /* Input styles */
+  label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    font-size: 16px;
+  }
+
+  input[type="text"] {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 6px;
+    border: 1.5px solid #555;
+    background: rgba(255, 255, 255, 0.1);
+    color: #eee;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+  }
+
+  input[type="text"]:focus {
+    border-color: #ff6f61;
+    outline: none;
+    background: rgba(255, 255, 255, 0.15);
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to the Stylish Demo</h1>
+
+    <p>This paragraph contains a <span class="highlight-span">highlighted word</span> to show how <code>&lt;span&gt;</code> works inline.</p>
+
+    <div class="highlight-box">
+      This is a <code>&lt;div&gt;</code> with a subtle background and padding to separate content visually.
+    </div>
+
+    <h2>Unordered List</h2>
+    <ul>
+      <li>First bullet point item</li>
+      <li>Another interesting point</li>
+      <li>More points to consider</li>
+    </ul>
+
+    <h2>Ordered List</h2>
+    <ol>
+      <li>Step one in a process</li>
+      <li>Step two comes next</li>
+      <li>Final step wraps it up</li>
+    </ol>
+
+    <h2>Information Table</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Feature</th>
+          <th>Description</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Responsive Design</td>
+          <td>Looks great on all devices</td>
+          <td>✅ Completed</td>
+        </tr>
+        <tr>
+          <td>Dark Mode</td>
+          <td>Easy on the eyes at night</td>
+          <td>⚙️ In Progress</td>
+        </tr>
+        <tr>
+          <td>Input Form</td>
+          <td>Allows user data entry</td>
+          <td>✅ Completed</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <form>
+      <label for="nameInput">Enter Your Name:</label>
+      <input type="text" id="nameInput" name="name" placeholder="Your name here..." />
+    </form>
+  </div>
+</body>
+</html>
